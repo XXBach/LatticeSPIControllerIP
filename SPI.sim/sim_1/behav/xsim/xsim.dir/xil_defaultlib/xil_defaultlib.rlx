@@ -1,0 +1,18 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+D:/Hc tp v s nghip/Semicon/SPI/SPI.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/imports/new/Sync_Counter_tb.sv,1760786908,systemVerilog,,,,Sync_Counter_tb,,uvm,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/Clock_Generator_tb.v,1760797477,verilog,,,,Clock_Generator_tb,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/PISO_tb.v,1760780233,verilog,,,,PISO_tb,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/SIPO_tb.v,1760783755,verilog,,,,SIPO_tb,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/SPIController_tb.v,1760693189,verilog,,,,SPIController_tb,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/imports/new/DFFs.v,1757839812,verilog,,D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/imports/new/Mux2_to_1.v,,DFFs_Behavioral;DFFs_GateLevel;D_latch,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/imports/new/Mux2_to_1.v,1757587144,verilog,,D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/imports/new/Mux4_to_1.v,,Mux2_to_1_Behavioral;Mux2_to_1_Dataflow;Mux2_to_1_Gatelevel,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/imports/new/Mux4_to_1.v,1757772991,verilog,,D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SIPO.v,,Mux4_to_1_Behavioral;Mux4_to_1_Dataflow;Mux4_to_1_Gatelevel,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/imports/new/Synchronous_Counter.v,1760786552,verilog,,,,Counter,,uvm,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/Clock_Generator.v,1760797434,verilog,,D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/Clock_Generator_tb.v,,Clock_Generator,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/SPIController.v,1760677378,verilog,,D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/SPIController_tb.v,,SPIController,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_PISO.v,1760778271,verilog,,D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/PISO_tb.v,,USR_PISO,,,,,,,,
+D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SIPO.v,1760783259,verilog,,D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sim_1/new/SIPO_tb.v,,USR_SIPO,,,,,,,,

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Oct 17 12:03:34 2025
+# Process ID: 6560
+# Current directory: D:/Hc tp v s nghip/Semicon/SPI/SPI.runs/synth_1
+# Command line: vivado.exe -log SPIController.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPIController.tcl
+# Log file: D:/Hc tp v s nghip/Semicon/SPI/SPI.runs/synth_1/SPIController.vds
+# Journal file: D:/Hc tp v s nghip/Semicon/SPI/SPI.runs/synth_1\vivado.jou
+# Running On        :LAPTOP-K5G8HKBB
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz
+# CPU Frequency     :3110 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16965 MB
+# Swap memory       :10737 MB
+# Total Virtual     :27702 MB
+# Available Virtual :8524 MB
+#-----------------------------------------------------------
+source SPIController.tcl -notrace
