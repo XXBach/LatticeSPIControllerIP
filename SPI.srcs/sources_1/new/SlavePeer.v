@@ -21,20 +21,28 @@
 
 
 module SlavePeer#(
-    parameter DATA_WIDTH = 8
+    parameter DATA_WIDTH = 8,
+    parameter NUM_BITS = 4
 )(
     input wire sclk,
     input wire reset_n,
     input wire SLV_start,
-    input wire [1:0] SIPO_mode,
+    input wire [1:0] SISO_mode,
     input wire MOSI,
     output wire MISO,
-    output wire SIPO_empty  
-    );   
-    wire [$clog2(DATA_WIDTH) - 1 : 0] Counting;
-    
+    output wire SISO_empty,
+    //Tesing output
+    output wire [DATA_WIDTH - 1 : 0] SISO_Current_Data   
+    );
+    //Slave peer contain of 1 Up Counter and 1 Universal Shift Regs
+    //The Counter is responsible for feedback SISO_empty to the Controller, inform the Controller that the Shift Regs has Shifted for 8 cycles - equal to 8 bits in Data width
+    //2 Universal Shift Regs is designed in the form of SISO
+    //SISO reg will receive data serial from MOSI and shift them onto MISO, start from the MSB bit 
+       
+    wire [NUM_BITS - 1 : 0] Counting;
+
     Counter#(
-        .NUM_BITS($clog2(DATA_WIDTH))
+        .NUM_BITS(NUM_BITS)
     )SLV_Counter(
         .sclk(sclk),
         .reset_n(reset_n),
@@ -42,15 +50,16 @@ module SlavePeer#(
         .Counting(Counting)
     );
     
-    USR_PISO#(
+    USR_SISO#(
        .DATA_WIDTH(DATA_WIDTH)
-    )SLV_SR(
+    )SLV_SISO(
         .sclk(sclk),
         .reset_n(reset_n),
-        .SIPO_mode(SIPO_mode & {2{SLV_start}}),
+        .SISO_mode(SISO_mode),
         .D_in(MOSI),
-        .D_out(MISO)  
+        .D_out(MISO),
+        .temp_D_out(SISO_Current_Data)  
     );
     
-    assign SIPO_empty = Counting[2] & Counting[1] & Counting[0]; 
+    assign SISO_empty = Counting[2] & Counting[1] & Counting[0]; 
 endmodule

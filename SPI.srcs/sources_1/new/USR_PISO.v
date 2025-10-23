@@ -27,9 +27,10 @@ module USR_PISO#(
     input wire reset_n,
     input wire [1:0] PISO_mode,
     input wire [DATA_WIDTH - 1 : 0] D_in,
-    output wire D_out  
+    output wire D_out,
+    output wire [DATA_WIDTH - 1 : 0] temp_D_out 
     );
-    wire [DATA_WIDTH - 1 : 0] temp_D_out;
+    wire [DATA_WIDTH - 1 : 0] unusued_flags;
     genvar i;
     generate
         wire [DATA_WIDTH - 1 : 0] DFF_input;
@@ -70,13 +71,14 @@ module USR_PISO#(
                     .E(DFF_input[i])
                 );
             end
-            DFFs_GateLevel#(
+            DFFs_Behavioral#(
                 .MODE(0)
             )DFF_Reg(
                 .clk(sclk),
                 .reset(!reset_n),
                 .P(DFF_input[i]),
-                .Q(temp_D_out[i])
+                .Q(temp_D_out[i]),
+                .notQ(unused_flags)
             );               
         end
     endgenerate

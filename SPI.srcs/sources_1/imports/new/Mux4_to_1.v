@@ -20,20 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 //Dataflow
-module Mux4_to_1_Dataflow#(
-    parameter DATA_WIDTH = 8
-)(
-    input wire [DATA_WIDTH - 1 : 0] A,
-    input wire [DATA_WIDTH - 1 : 0] B,
-    input wire [DATA_WIDTH - 1 : 0] C,
-    input wire [DATA_WIDTH - 1 : 0] D,
-    input wire [1:0] Sel,
-    output wire [DATA_WIDTH - 1 : 0] E
-    );
-    assign E = (Sel == 2'b11) ? D : 
-               (Sel == 2'b10) ? C :
-               (Sel == 2'b01) ? B : A;
-endmodule
+//module Mux4_to_1_Dataflow#(
+//    parameter DATA_WIDTH = 8
+//)(
+//    input wire [DATA_WIDTH - 1 : 0] A,
+//    input wire [DATA_WIDTH - 1 : 0] B,
+//    input wire [DATA_WIDTH - 1 : 0] C,
+//    input wire [DATA_WIDTH - 1 : 0] D,
+//    input wire [1:0] Sel,
+//    output wire [DATA_WIDTH - 1 : 0] E
+//    );
+//    assign E = (Sel == 2'b11) ? D : 
+//               (Sel == 2'b10) ? C :
+//               (Sel == 2'b01) ? B : A;
+//endmodule
 
 //Behavioral
 

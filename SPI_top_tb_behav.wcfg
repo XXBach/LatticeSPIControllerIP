@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="SPI_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SPI_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="105.389 ns"></ZoomStartTime>
+      <ZoomEndTime time="241.990 ns"></ZoomEndTime>
+      <Cursor1Time time="205.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="73"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/SPI_top_tb/DUT/Controller/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/SPI_en_n" type="logic">
+      <obj_property name="ElementShortName">SPI_en_n</obj_property>
+      <obj_property name="ObjectShortName">SPI_en_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/D_in" type="array">
+      <obj_property name="ElementShortName">D_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">D_in[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/MST_Peer/MST_PISO/temp_D_out" type="array">
+      <obj_property name="ElementShortName">temp_D_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_D_out[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/PISO_mode" type="array">
+      <obj_property name="ElementShortName">PISO_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">PISO_mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/CLK_GEN/clk_gen_en" type="logic">
+      <obj_property name="ElementShortName">clk_gen_en</obj_property>
+      <obj_property name="ObjectShortName">clk_gen_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/Controller/SS_n" type="logic">
+      <obj_property name="ElementShortName">SS_n</obj_property>
+      <obj_property name="ObjectShortName">SS_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/CLK_GEN/sclk_o" type="logic">
+      <obj_property name="ElementShortName">sclk_o</obj_property>
+      <obj_property name="ObjectShortName">sclk_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/MST_Peer/MOSI" type="logic">
+      <obj_property name="ElementShortName">MOSI</obj_property>
+      <obj_property name="ObjectShortName">MOSI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/MST_Peer/MISO" type="logic">
+      <obj_property name="ElementShortName">MISO</obj_property>
+      <obj_property name="ObjectShortName">MISO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/SLV_Peer/SLV_SISO/temp_D_out" type="array">
+      <obj_property name="ElementShortName">temp_D_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_D_out[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/D_out" type="array">
+      <obj_property name="ElementShortName">D_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">D_out[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/SLV_Peer/SISO_mode" type="array">
+      <obj_property name="ElementShortName">SISO_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SISO_mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/MST_Peer/PISO_empty" type="logic">
+      <obj_property name="ElementShortName">PISO_empty</obj_property>
+      <obj_property name="ObjectShortName">PISO_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPI_top_tb/DUT/Controller/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group52" type="group">
+      <obj_property name="label">FIFO_signal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/SPI_top_tb/FIFO_ready" type="logic">
+         <obj_property name="ElementShortName">FIFO_ready</obj_property>
+         <obj_property name="ObjectShortName">FIFO_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SPI_top_tb/FIFO_wr_request" type="logic">
+         <obj_property name="ElementShortName">FIFO_wr_request</obj_property>
+         <obj_property name="ObjectShortName">FIFO_wr_request</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group51" type="group">
+      <obj_property name="label">LMMI_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/SPI_top_tb/lmmi_request" type="logic">
+         <obj_property name="ElementShortName">lmmi_request</obj_property>
+         <obj_property name="ObjectShortName">lmmi_request</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SPI_top_tb/lmmi_wr_rdn" type="logic">
+         <obj_property name="ElementShortName">lmmi_wr_rdn</obj_property>
+         <obj_property name="ObjectShortName">lmmi_wr_rdn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SPI_top_tb/offset" type="array">
+         <obj_property name="ElementShortName">offset[7:0]</obj_property>
+         <obj_property name="ObjectShortName">offset[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SPI_top_tb/SPI_ready" type="logic">
+         <obj_property name="ElementShortName">SPI_ready</obj_property>
+         <obj_property name="ObjectShortName">SPI_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SPI_top_tb/lmmi_rdata_valid" type="logic">
+         <obj_property name="ElementShortName">lmmi_rdata_valid</obj_property>
+         <obj_property name="ObjectShortName">lmmi_rdata_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SPI_top_tb/lmmi_ready" type="logic">
+         <obj_property name="ElementShortName">lmmi_ready</obj_property>
+         <obj_property name="ObjectShortName">lmmi_ready</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

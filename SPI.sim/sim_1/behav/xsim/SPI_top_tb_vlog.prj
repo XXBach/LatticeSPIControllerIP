@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SPI.srcs/sources_1/new/Clock_Generator.v" \
+"../../../../SPI.srcs/sources_1/imports/new/DFFs.v" \
+"../../../../SPI.srcs/sources_1/new/MasterPeer.v" \
+"../../../../SPI.srcs/sources_1/imports/new/Mux2_to_1.v" \
+"../../../../SPI.srcs/sources_1/imports/new/Mux4_to_1.v" \
+"../../../../SPI.srcs/sources_1/new/SPIController.v" \
+"../../../../SPI.srcs/sources_1/new/SPI_Controller_Top.v" \
+"../../../../SPI.srcs/sources_1/new/SlavePeer.v" \
+"../../../../SPI.srcs/sources_1/imports/new/Synchronous_Counter.v" \
+"../../../../SPI.srcs/sources_1/new/USR_PISO.v" \
+"../../../../SPI.srcs/sources_1/new/USR_SIPO.v" \
+"../../../../SPI.srcs/sources_1/new/USR_SISO.v" \
+"../../../../SPI.srcs/sim_1/new/SPI_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

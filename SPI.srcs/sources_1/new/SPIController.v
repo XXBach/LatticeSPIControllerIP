@@ -29,7 +29,7 @@ module SPIController#(
     //Input control signal from Microcontroller
     input wire SPI_en_n,
     input wire PISO_empty,
-    input wire SIPO_empty,
+    input wire SISO_empty,
     
     //Input control signal from LMMI device
     input wire lmmi_ready,
@@ -41,6 +41,7 @@ module SPIController#(
     //Output control signal for intra Controller
     output wire SS_n,
     output wire clk_gen_en,
+    output wire [1:0] SISO_mode,
     output wire [1:0] PISO_mode,
     output wire [1:0] SIPO_mode,
     output wire MST_start,
@@ -53,7 +54,10 @@ module SPIController#(
     output wire SPI_ready,
     
     //Output control signal for communication with FIFO output
-    output wire FIFO_wr_request
+    output wire FIFO_wr_request,
+    
+    //Tesing output
+    output reg [2:0] current_state
     );
     //local parameter for states
     localparam IDLE = 3'b000;
@@ -69,6 +73,7 @@ module SPIController#(
     //Local regs for intra Controller
     reg temp_SS_n;
     reg temp_clk_gen_en;
+    reg [1:0] temp_SISO_mode;
     reg [1:0] temp_PISO_mode;
     reg [1:0] temp_SIPO_mode;
     reg temp_MST_start;
@@ -95,7 +100,7 @@ module SPIController#(
         else current_state <= next_state;
     end
     
-    // Next state transition
+    // Next state transition, the transition will be executed in the following order with no backward: S0 -> S1 -> S2 -> S3 -> S4 -> S5 -> S6 -> S7 -> S0/S1
     always@(*) begin
         case(current_state) 
             //IDLE state
@@ -124,7 +129,7 @@ module SPIController#(
             end
             //MISO_Drive
             MISO_DRIVE: begin
-                if(SIPO_empty) next_state = FIFO_WRITE_REQUEST;
+                if(SISO_empty) next_state = FIFO_WRITE_REQUEST;
                 else next_state = MISO_DRIVE;
             end
             //Drive output to FIFO ( Which act like a buffer before being read out by other peers )
@@ -145,22 +150,12 @@ module SPIController#(
     end
     
     // Decode States to Output
-//    always@(*) begin
-//        temp_SS_n = (current_state == IDLE || current_state == FIFO_WRITE_REQUEST || current_state == FIFO_WRITE) ? 1'b1 : 1'b0;
-//        temp_clk_gen_en = (current_state == WAIT_RDATA || current_state == LATCH_RDATA || current_state == MOSI_DRIVE || current_state == MISO_DRIVE) ? 1'b1 : 1'b0;
-//        temp_PISO_mode = (current_state == MOSI_DRIVE) ? 2'b01 : (current_state == MISO_DRIVE) ? 2'b10 : 2'b00;
-//        temp_SIPO_mode = (current_state == MISO_DRIVE) ? 2'b01 : (current_state == MOSI_DRIVE) ? 2'b10 : 2'b00;
-//        temp_lmmi_request = (current_state == LMMI_READ_REQUEST) ? 1'b1 : 1'b0;
-//        temp_lmmi_wr_rdn = 1'b0;
-//        temp_offset = (current_state == LMMI_READ_REQUEST || current_state == WAIT_RDATA) ? 8'hA0 : 8'h00;
-//        temp_SPI_ready = (current_state == LMMI_READ_REQUEST || current_state == LATCH_RDATA) ? 1'b1 : 1'b0;
-//        temp_FIFO_wr_request = (current_state == FIFO_WRITE_REQUEST) ? 1'b1 : 1'b0;
-//    end
     always@(*) begin
         case(current_state)
             IDLE: begin
                 temp_SS_n = 1'b1;
                 temp_clk_gen_en = 1'b0;
+                temp_SISO_mode = 2'b00;
                 temp_PISO_mode = 2'b00;
                 temp_SIPO_mode = 2'b00;
                 temp_MST_start = 1'b0;
@@ -172,8 +167,9 @@ module SPIController#(
                 temp_FIFO_wr_request = 1'b0;
             end
             LMMI_READ_REQUEST: begin
-                temp_SS_n = 1'b0;
+                temp_SS_n = 1'b1;
                 temp_clk_gen_en = 1'b0;
+                temp_SISO_mode = 2'b00;
                 temp_PISO_mode = 2'b00;
                 temp_SIPO_mode = 2'b00;
                 temp_MST_start = 1'b0;
@@ -185,8 +181,9 @@ module SPIController#(
                 temp_FIFO_wr_request = 1'b0;
             end
             WAIT_RDATA: begin
-                temp_SS_n = 1'b0;
+                temp_SS_n = 1'b1;
                 temp_clk_gen_en = 1'b1;
+                temp_SISO_mode = 2'b00;
                 temp_PISO_mode = 2'b00;
                 temp_SIPO_mode = 2'b00;
                 temp_MST_start = 1'b0;
@@ -200,7 +197,8 @@ module SPIController#(
             LATCH_RDATA: begin
                 temp_SS_n = 1'b0;
                 temp_clk_gen_en = 1'b1;
-                temp_PISO_mode = 2'b00;
+                temp_SISO_mode = 2'b01;
+                temp_PISO_mode = 2'b01;
                 temp_SIPO_mode = 2'b00;
                 temp_MST_start = 1'b0;
                 temp_SLV_start = 1'b0;                
@@ -213,8 +211,9 @@ module SPIController#(
             MOSI_DRIVE: begin
                 temp_SS_n = 1'b0;
                 temp_clk_gen_en = 1'b1;
+                temp_SISO_mode = 2'b01;
                 temp_PISO_mode = 2'b01;
-                temp_SIPO_mode = 2'b10;
+                temp_SIPO_mode = 2'b00;
                 temp_MST_start = 1'b1;
                 temp_SLV_start = 1'b0;                
                 temp_lmmi_request = 1'b0;
@@ -226,8 +225,9 @@ module SPIController#(
             MISO_DRIVE: begin
                 temp_SS_n = 1'b0;
                 temp_clk_gen_en = 1'b1;
-                temp_PISO_mode = 2'b10;
-                temp_SIPO_mode = 2'b01;
+                temp_SISO_mode = 2'b10;
+                temp_PISO_mode = 2'b00;
+                temp_SIPO_mode = 2'b10;
                 temp_MST_start = 1'b0;
                 temp_SLV_start = 1'b1;                
                 temp_lmmi_request = 1'b0;
@@ -239,6 +239,7 @@ module SPIController#(
             FIFO_WRITE_REQUEST: begin
                 temp_SS_n = 1'b1;
                 temp_clk_gen_en = 1'b0;
+                temp_SISO_mode = 2'b00;
                 temp_PISO_mode = 2'b00;
                 temp_SIPO_mode = 2'b00;
                 temp_MST_start = 1'b0;
@@ -252,6 +253,7 @@ module SPIController#(
             default: begin
                 temp_SS_n = 1'b1;
                 temp_clk_gen_en = 1'b0;
+                temp_SISO_mode = 2'b00;
                 temp_PISO_mode = 2'b00;
                 temp_SIPO_mode = 2'b00;
                 temp_MST_start = 1'b0;
@@ -264,6 +266,7 @@ module SPIController#(
             end            
         endcase
     end
+    
     //Output signal assignment
     assign SS_n = temp_SS_n;
     assign clk_gen_en = temp_clk_gen_en;
@@ -276,4 +279,5 @@ module SPIController#(
     assign FIFO_wr_request = temp_FIFO_wr_request;
     assign MST_start = temp_MST_start;
     assign SLV_start = temp_SLV_start;
+    assign SISO_mode = temp_SISO_mode;
 endmodule

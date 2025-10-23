@@ -21,8 +21,8 @@
 
 
 module Clock_Generator#(
-        parameter NUM_BITS = 4,
-        parameter SCLK_PW = 1
+        parameter NUM_BITS = 4, //parameter that defines Counter number of bits
+        parameter SCLK_PW = 1 
 )(
         input wire clk_i,
         input wire reset_n,
@@ -35,6 +35,9 @@ module Clock_Generator#(
             temp_Counting = 0;
             temp_sclk_o = 0;
         end
+        
+        // The base idea is that temp_Counting will start to count up from zero whenever clk_gen_en is HIGH,
+        // if its value equal to SCLK_PW - 1 then the sclk_o will be toggled 
         always@(posedge clk_i or negedge reset_n) begin
             if(!reset_n) begin 
                 temp_Counting <= 0;

@@ -1,15 +1,36 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Clock_Generator_tb_behav xil_defaultlib.Clock_Generator_tb xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SPI_top_tb_behav xil_defaultlib.SPI_top_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'B' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_PISO.v:42]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'C' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_PISO.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SIPO.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SIPO.v:64]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SIPO.v:52]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SISO.v:42]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SISO.v:66]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'A' [D:/Hc tp v s nghip/Semicon/SPI/SPI.srcs/sources_1/new/USR_SISO.v:54]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Clock_Generator
-Compiling module xil_defaultlib.Clock_Generator_tb
+Compiling module xil_defaultlib.SPIController
+Compiling module xil_defaultlib.Clock_Generator(NUM_BITS=3)
+Compiling module xil_defaultlib.Counter(NUM_BITS=3)
+Compiling module xil_defaultlib.Mux2_to_1_Gatelevel(DATA_WIDTH=1...
+Compiling module xil_defaultlib.Mux4_to_1_Gatelevel(DATA_WIDTH=1...
+Compiling module xil_defaultlib.DFFs_Behavioral_default
+Compiling module xil_defaultlib.USR_PISO_default
+Compiling module xil_defaultlib.D_latch
+Compiling module xil_defaultlib.DFFs_GateLevel_default
+Compiling module xil_defaultlib.USR_SIPO_default
+Compiling module xil_defaultlib.MasterPeer(NUM_BITS=3)
+Compiling module xil_defaultlib.USR_SISO_default
+Compiling module xil_defaultlib.SlavePeer(NUM_BITS=3)
+Compiling module xil_defaultlib.SPI_Controller_Top
+Compiling module xil_defaultlib.SPI_top_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot Clock_Generator_tb_behav
+Built simulation snapshot SPI_top_tb_behav
