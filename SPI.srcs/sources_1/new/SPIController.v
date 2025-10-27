@@ -89,7 +89,6 @@ module SPIController#(
     reg temp_FIFO_wr_request;
     
     //Local regs for SPIController States
-    reg [2:0] current_state;
     reg [2:0] next_state;
     
     // Additional 

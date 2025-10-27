@@ -57,7 +57,7 @@ endmodule
 
 //Gate level
 module Mux4_to_1_Gatelevel#(
-    parameter DATA_WIDTH = 8
+    parameter DATA_WIDTH = 1
 )(
     input wire [DATA_WIDTH - 1 : 0] A,
     input wire [DATA_WIDTH - 1 : 0] B,

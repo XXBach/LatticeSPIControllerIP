@@ -1,0 +1,56 @@
+QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 17:21:01 on Oct 24,2025
+vopt -work work SPI_Controller_Top -o workopt2 -l vopt_fixed1.log 
+
+Top level modules:
+	SPI_Controller_Top
+
+Analyzing design...
+-- Loading module SPI_Controller_Top
+-- Loading module SPIController
+-- Loading module Clock_Generator
+-- Loading module MasterPeer
+-- Loading module Counter
+-- Loading module USR_PISO
+-- Loading module USR_SIPO
+-- Loading module SlavePeer
+-- Loading module USR_SISO
+-- Loading module Mux4_to_1_Gatelevel
+-- Loading module Mux2_to_1_Gatelevel
+-- Loading module DFFs_Behavioral
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(40): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(52): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(39): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(51): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_PISO.v(40): (vopt-2241) Connection width does not match width of port 'B'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(63).
+** Warning: ./SPI.srcs/sources_1/new/USR_PISO.v(52): (vopt-2241) Connection width does not match width of port 'C'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(64).
+** Warning: ./SPI.srcs/sources_1/new/SPI_Controller_Top.v(86): (vopt-2241) Connection width does not match width of port 'current_state'. The port definition is at: ./SPI.srcs/sources_1/new/SPIController.v(60).
+Incremental compilation check found 4 design-units (out of 12) may be reused.
+Optimizing 8 design-units (inlining 129/130 module instances):
+-- Inlining module SPIController(fast)
+-- Inlining module Clock_Generator(fast)
+-- Inlining module Counter(fast)
+-- Inlining module Mux2_to_1_Gatelevel(fast)
+-- Inlining module Mux4_to_1_Gatelevel(fast)
+-- Inlining module DFFs_Behavioral(fast)
+-- Inlining module USR_PISO(fast)
+-- Inlining module USR_SIPO(fast)
+-- Inlining module MasterPeer(fast)
+-- Inlining module USR_SISO(fast)
+-- Inlining module SlavePeer(fast)
+-- Optimizing module SPI_Controller_Top(fast)
+Optimized design name is workopt2
+End time: 17:21:02 on Oct 24,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 19

@@ -1,0 +1,16 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 15:37:07 on Oct 24,2025
+vlog -work work -v /home/bachnguyen/SPI_Project/LatticeSPIControllerIP/SPI.srcs/sim_1/new/SPI_top_tb.v /home/bachnguyen/SPI_Project/LatticeSPIControllerIP/SPI.srcs/sources_1/new/SPI_Controller_Top.v -l vlog.log 
+-- Compiling module SPI_Controller_Top
+-- Scanning library file '/home/bachnguyen/SPI_Project/LatticeSPIControllerIP/SPI.srcs/sim_1/new/SPI_top_tb.v'
+
+Referenced (but uncompiled) modules or primitives:
+	SPIController
+	Clock_Generator
+	MasterPeer
+	SlavePeer
+
+Top level modules:
+	SPI_Controller_Top
+End time: 15:37:07 on Oct 24,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

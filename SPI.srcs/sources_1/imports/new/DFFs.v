@@ -39,19 +39,19 @@ module DFFs_Behavioral#(
     input wire clk,
     input wire reset,
     input wire P,
-    output reg Q,
-    output reg notQ
+    output reg Q
+//    output reg notQ
     );
     generate
         if(MODE == 0) begin
             always@(posedge clk or posedge reset) begin
                 if(reset) begin
                     Q <= 0;
-                    notQ <= 1;
+//                   notQ <= 1;
                 end
                 else begin
                     Q <= P;
-                    notQ <= ~P;
+//                    notQ <= ~P;
                 end
             end
         end
@@ -59,11 +59,11 @@ module DFFs_Behavioral#(
             always@(posedge clk) begin
                 if(reset) begin
                     Q <= 0;
-                    notQ <= 1;
+//                   notQ <= 1;
                 end
                 else begin
                     Q <= P;
-                    notQ <= ~P;
+//                    notQ <= ~P;
                 end
             end
         end
@@ -81,13 +81,15 @@ module DFFs_GateLevel#(
     output wire notQ
     );
     wire master_Q;
+    wire unused;
     generate
         if(MODE == 0) begin
             D_latch
             master(
                 .P(P),
                 .Enable(~clk),
-                .Q(master_Q)
+                .Q(master_Q),
+                .notQ(unused)
             );
             D_latch
             slave(
@@ -102,7 +104,8 @@ module DFFs_GateLevel#(
             master(
                 .P(P),
                 .Enable(~clk & ~reset),
-                .Q(master_Q)
+                .Q(master_Q),
+                .notQ(unused)
             );
             D_latch
             slave(

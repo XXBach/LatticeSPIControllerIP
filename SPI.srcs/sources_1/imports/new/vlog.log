@@ -1,0 +1,23 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 15:50:55 on Oct 24,2025
+vlog -work work DFFs.v Mux2_to_1.v Mux4_to_1.v Synchronous_Counter.v Universal_Shift_Reg.v -l vlog.log 
+-- Compiling module DFFs_Behavioral
+-- Compiling module DFFs_GateLevel
+-- Compiling module D_latch
+-- Compiling module Mux2_to_1_Dataflow
+-- Compiling module Mux2_to_1_Behavioral
+-- Compiling module Mux2_to_1_Gatelevel
+-- Compiling module Mux4_to_1_Behavioral
+-- Compiling module Mux4_to_1_Gatelevel
+-- Compiling module Counter
+-- Compiling module Universal_Shift_Reg_GateLevel
+
+Top level modules:
+	DFFs_Behavioral
+	Mux2_to_1_Dataflow
+	Mux2_to_1_Behavioral
+	Mux4_to_1_Behavioral
+	Counter
+	Universal_Shift_Reg_GateLevel
+End time: 15:50:55 on Oct 24,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

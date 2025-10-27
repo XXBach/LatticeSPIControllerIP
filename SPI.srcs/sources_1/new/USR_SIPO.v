@@ -37,7 +37,7 @@ module USR_SIPO#(
                 Mux4_to_1_Gatelevel#(
                     .DATA_WIDTH(1)
                 )input_Sel(
-                    .A(0),
+                    .A(1'b0),
                     .B(D_in),
                     .C(D_out[i+1]),
                     .D(D_out[i]),
@@ -49,7 +49,7 @@ module USR_SIPO#(
                 Mux4_to_1_Gatelevel#(
                     .DATA_WIDTH(1)
                 )input_Sel(
-                    .A(0),
+                    .A(1'b0),
                     .B(D_out[i-1]),
                     .C(D_in),
                     .D(D_out[i]),
@@ -61,7 +61,7 @@ module USR_SIPO#(
                 Mux4_to_1_Gatelevel#(
                     .DATA_WIDTH(1)
                 )input_Sel(
-                    .A(0),
+                    .A(1'b0),
                     .B(D_out[i-1]),
                     .C(D_out[i+1]),
                     .D(D_out[i]),
@@ -69,7 +69,7 @@ module USR_SIPO#(
                     .E(DFF_input[i])
                 );
             end
-            DFFs_GateLevel#(
+            DFFs_Behavioral#(
                 .MODE(0)
             )DFF_Reg(
                 .clk(sclk),

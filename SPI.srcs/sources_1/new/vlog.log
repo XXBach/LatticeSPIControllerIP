@@ -1,0 +1,19 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 15:47:19 on Oct 24,2025
+vlog -work work APB_Bridge.v Clock_Generator.v LMMI2APB.v MasterPeer.v PeersConnection.v RegisterFile.v SlavePeer.v SPI_Controller_Top.v SPIController.v USR_PISO.v USR_SIPO.v USR_SISO.v -l vlog.log 
+-- Compiling module APB_Bridge
+** Error: APB_Bridge.v(102): (vlog-2730) Undefined variable: 'PWDATA_i'.
+-- Compiling module Clock_Generator
+-- Compiling module LMMI2APB
+-- Compiling module MasterPeer
+-- Compiling module PeersConnection
+-- Compiling module RegisterFile
+-- Compiling module SlavePeer
+-- Compiling module SPI_Controller_Top
+-- Compiling module SPIController
+** Error (suppressible): SPIController.v(92): (vlog-2388) 'current_state' already declared in this scope (SPIController) at SPIController.v(60).
+-- Compiling module USR_PISO
+-- Compiling module USR_SIPO
+-- Compiling module USR_SISO
+End time: 15:47:19 on Oct 24,2025, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0

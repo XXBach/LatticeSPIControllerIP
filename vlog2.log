@@ -1,0 +1,16 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 16:28:46 on Oct 24,2025
+vlog -work work ./SPI.srcs/sources_1/imports/new/DFFs.v ./SPI.srcs/sources_1/imports/new/Mux2_to_1.v ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v ./SPI.srcs/sources_1/imports/new/Synchronous_counter.v ./SPI.srcs/sources_1/imports/new/Universal_Shift_Reg.v -l vlog2.log 
+-- Compiling module DFFs_Behavioral
+-- Compiling module DFFs_GateLevel
+-- Compiling module D_latch
+-- Compiling module Mux2_to_1_Dataflow
+-- Compiling module Mux2_to_1_Behavioral
+-- Compiling module Mux2_to_1_Gatelevel
+-- Compiling module Mux4_to_1_Behavioral
+-- Compiling module Mux4_to_1_Gatelevel
+** Error: (vlog-7) Failed to open design unit file "./SPI.srcs/sources_1/imports/new/Synchronous_counter.v" in read mode.
+No such file or directory. (errno = ENOENT)
+-- Compiling module Universal_Shift_Reg_GateLevel
+End time: 16:28:46 on Oct 24,2025, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

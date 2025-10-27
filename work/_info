@@ -1,0 +1,520 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/bachnguyen/SPI_Project/LatticeSPIControllerIP
+T_opt
+!s110 1761537145
+VWFSlhMb:mSCGULc8c2iiB2
+Z2 04 10 4 work SPI_top_tb fast 0
+=1-000ae431a4f1-68feec79-1e5cd-1866
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2_1;73
+R1
+T_opt1
+!s110 1761537802
+VWZE4N=AHijgO4dICfQo@X2
+R2
+=1-000ae431a4f1-68feef0a-4c796-1a0a
+R3
+o-quiet -auto_acc_if_foreign -work work +acc
+R4
+n@_opt1
+R5
+vClock_Generator
+Z6 !s110 1761476360
+!i10b 1
+!s100 B4O;lPnOC[U35]89CPdNe1
+IjTlkUT;g[O:N9Ll93Pf^:0
+R1
+Z7 w1761268835
+8./SPI.srcs/sources_1/new/Clock_Generator.v
+F./SPI.srcs/sources_1/new/Clock_Generator.v
+!i122 15
+L0 23 42
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z10 !s108 1761476359.000000
+Z11 !s107 ./SPI.srcs/sim_1/new/SPI_top_tb.v|./SPI.srcs/sources_1/imports/new/Synchronous_Counter.v|./SPI.srcs/sources_1/imports/new/Mux4_to_1.v|./SPI.srcs/sources_1/imports/new/Mux2_to_1.v|./SPI.srcs/sources_1/imports/new/DFFs.v|./SPI.srcs/sources_1/new/USR_SISO.v|./SPI.srcs/sources_1/new/USR_SIPO.v|./SPI.srcs/sources_1/new/USR_PISO.v|./SPI.srcs/sources_1/new/SPIController.v|./SPI.srcs/sources_1/new/SPI_Controller_Top.v|./SPI.srcs/sources_1/new/SlavePeer.v|./SPI.srcs/sources_1/new/RegisterFile.v|./SPI.srcs/sources_1/new/MasterPeer.v|./SPI.srcs/sources_1/new/Clock_Generator.v|
+Z12 !s90 -work|work|./SPI.srcs/sources_1/new/Clock_Generator.v|./SPI.srcs/sources_1/new/MasterPeer.v|./SPI.srcs/sources_1/new/RegisterFile.v|./SPI.srcs/sources_1/new/SlavePeer.v|./SPI.srcs/sources_1/new/SPI_Controller_Top.v|./SPI.srcs/sources_1/new/SPIController.v|./SPI.srcs/sources_1/new/USR_PISO.v|./SPI.srcs/sources_1/new/USR_SIPO.v|./SPI.srcs/sources_1/new/USR_SISO.v|./SPI.srcs/sources_1/imports/new/DFFs.v|./SPI.srcs/sources_1/imports/new/Mux2_to_1.v|./SPI.srcs/sources_1/imports/new/Mux4_to_1.v|./SPI.srcs/sources_1/imports/new/Synchronous_Counter.v|./SPI.srcs/sim_1/new/SPI_top_tb.v|-l|vlog3_fixed.log|
+!i113 0
+Z13 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@clock_@generator
+vCounter
+R6
+!i10b 1
+!s100 fTn;RCG2UGezFE]B<f^?j2
+I_e0f8Ongd=JAM]JkP6WVX0
+R1
+R7
+8./SPI.srcs/sources_1/imports/new/Synchronous_Counter.v
+F./SPI.srcs/sources_1/imports/new/Synchronous_Counter.v
+!i122 15
+L0 22 21
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@counter
+vD_latch
+R6
+!i10b 1
+!s100 >mgRfMVK6T]W]z_9fWjbd1
+IYD?lHYdcfmzl4BLO];:ZF3
+R1
+Z14 w1761301168
+Z15 8./SPI.srcs/sources_1/imports/new/DFFs.v
+Z16 F./SPI.srcs/sources_1/imports/new/DFFs.v
+!i122 15
+L0 121 15
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@d_latch
+vDFFs_Behavioral
+R6
+!i10b 1
+!s100 G@IEC=ZBekID3NC8Ek;`K0
+IeCa048Ge3Akccz8TD;5a@2
+R1
+R14
+R15
+R16
+!i122 15
+L0 36 36
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@d@f@fs_@behavioral
+vDFFs_GateLevel
+R6
+!i10b 1
+!s100 1=ik]3>F_PSN^hX^IWl6N0
+I4aondU_UEGJOS]fC6?8C23
+R1
+R14
+R15
+R16
+!i122 15
+L0 74 46
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@d@f@fs_@gate@level
+vMasterPeer
+R6
+!i10b 1
+!s100 D;YZX1=gP5=PnUF<2n1`e2
+Iza]Y__e2OzJ4?k1^Zf;023
+R1
+w1761298852
+8./SPI.srcs/sources_1/new/MasterPeer.v
+F./SPI.srcs/sources_1/new/MasterPeer.v
+!i122 15
+L0 23 65
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@master@peer
+vMux2_to_1_Behavioral
+R6
+!i10b 1
+!s100 1J>@:daUL]B4aL9aKJgKM1
+ImWUz:@S0[NDPCWk4@VXh=0
+R1
+R7
+Z17 8./SPI.srcs/sources_1/imports/new/Mux2_to_1.v
+Z18 F./SPI.srcs/sources_1/imports/new/Mux2_to_1.v
+!i122 15
+L0 35 13
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@mux2_to_1_@behavioral
+vMux2_to_1_Dataflow
+R6
+!i10b 1
+!s100 TD[D9B<WNIJKP@6[><NM12
+InX;?<=Q^V<6zeIia0O_U63
+R1
+R7
+R17
+R18
+!i122 15
+L0 23 10
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@mux2_to_1_@dataflow
+vMux2_to_1_Gatelevel
+R6
+!i10b 1
+!s100 ]UIEe;lVb[6@6]V[W5Kf]0
+IQjQjamSX5kNm[zd=?LT`R1
+R1
+R7
+R17
+R18
+!i122 15
+L0 50 22
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@mux2_to_1_@gatelevel
+vMux4_to_1_Behavioral
+R6
+!i10b 1
+!s100 k_N2jiKENYTP8L@`ElhEm0
+IhT9kALlUjhj^zoPl`_2dh0
+R1
+Z19 w1761465362
+Z20 8./SPI.srcs/sources_1/imports/new/Mux4_to_1.v
+Z21 F./SPI.srcs/sources_1/imports/new/Mux4_to_1.v
+!i122 15
+L0 40 17
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@mux4_to_1_@behavioral
+vMux4_to_1_Gatelevel
+R6
+!i10b 1
+!s100 d89FM<@_Wg25Yo5893h@D2
+I30i^mCKM<6_0YnzcAH5QS3
+R1
+R19
+R20
+R21
+!i122 15
+L0 59 37
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@mux4_to_1_@gatelevel
+vRegisterFile
+R6
+!i10b 1
+!s100 e4b2zkOMKT`FD@U:J6GFi0
+IJj5XaNQaRTnIJN?zOZ[=80
+R1
+R7
+8./SPI.srcs/sources_1/new/RegisterFile.v
+F./SPI.srcs/sources_1/new/RegisterFile.v
+!i122 15
+L0 23 38
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@register@file
+vSlavePeer
+R6
+!i10b 1
+!s100 iNUe:9fG>gMiIP<UBm`l73
+I1>GjjL6S]o04]Wik]d0:R3
+R1
+R7
+8./SPI.srcs/sources_1/new/SlavePeer.v
+F./SPI.srcs/sources_1/new/SlavePeer.v
+!i122 15
+L0 23 43
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@slave@peer
+vSPI_Controller_Top
+R6
+!i10b 1
+!s100 KZ8[^Td6S7diLn0^WVU]X3
+I[1WR[R[KI=>Oj9B@>B7JP3
+R1
+w1761469755
+8./SPI.srcs/sources_1/new/SPI_Controller_Top.v
+F./SPI.srcs/sources_1/new/SPI_Controller_Top.v
+!i122 15
+L0 23 131
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@s@p@i_@controller_@top
+vSPI_top_tb
+!s110 1761537544
+!i10b 1
+!s100 TinXVXk:P`EbZ5GJ6L9gM1
+IdKcUI_G307ggEDUZ]g@7b3
+R1
+w1761537541
+8./SPI.srcs/sim_1/new/SPI_top_tb.v
+F./SPI.srcs/sim_1/new/SPI_top_tb.v
+!i122 23
+L0 23 135
+R8
+R9
+r1
+!s85 0
+31
+!s108 1761537544.000000
+!s107 ./SPI.srcs/sim_1/new/SPI_top_tb.v|
+!s90 -work|work|./SPI.srcs/sim_1/new/SPI_top_tb.v|
+!i113 0
+R13
+R4
+n@s@p@i_top_tb
+vSPIController
+R6
+!i10b 1
+!s100 @a35=DN11=M^8X@jim^0`2
+IN8zjBgT6zCI=Ga^8G7hK_1
+R1
+w1761472329
+8./SPI.srcs/sources_1/new/SPIController.v
+F./SPI.srcs/sources_1/new/SPIController.v
+!i122 15
+L0 23 260
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@s@p@i@controller
+vUSR_PISO
+R6
+!i10b 1
+!s100 R<_QZ1cje`o?hBddbzXEo0
+Ii3ZcW`Wz0<O^SJ8cAej?43
+R1
+w1761476354
+8./SPI.srcs/sources_1/new/USR_PISO.v
+F./SPI.srcs/sources_1/new/USR_PISO.v
+!i122 15
+Z22 L0 23 62
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@u@s@r_@p@i@s@o
+vUSR_SIPO
+R6
+!i10b 1
+!s100 A<i@:lYONfN3YiWoK3Ad_0
+I7A0Q[48Vg><;aa[@a@02R1
+R1
+w1761472395
+8./SPI.srcs/sources_1/new/USR_SIPO.v
+F./SPI.srcs/sources_1/new/USR_SIPO.v
+!i122 15
+L0 23 60
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@u@s@r_@s@i@p@o
+vUSR_SISO
+R6
+!i10b 1
+!s100 =Ah>429b:2zf5R9_h0D8b0
+IGmHQ=n3<Ri@fUFD[PaXVn0
+R1
+w1761473273
+8./SPI.srcs/sources_1/new/USR_SISO.v
+F./SPI.srcs/sources_1/new/USR_SISO.v
+!i122 15
+R22
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@u@s@r_@s@i@s@o
+Tvopt3
+!s110 1761465835
+V5=[<fc@5Nn5GaLd^I15fW1
+Z23 04 18 4 work SPI_Controller_Top fast 0
+R3
+Z24 o-work work
+R4
+nvopt3
+R5
+R1
+Tworkopt
+!s110 1761537547
+VZbgY0DZINj5BBL9]>]Qm22
+R2
+R3
+R24
+R4
+nworkopt
+R5
+R1
+Tworkopt2
+!s110 1761301262
+V=f22aN27j<2YegYR?[Ek73
+R23
+R3
+R24
+R4
+nworkopt2
+R5
+R1

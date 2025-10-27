@@ -30,7 +30,6 @@ module USR_PISO#(
     output wire D_out,
     output wire [DATA_WIDTH - 1 : 0] temp_D_out 
     );
-    wire [DATA_WIDTH - 1 : 0] unusued_flags;
     genvar i;
     generate
         wire [DATA_WIDTH - 1 : 0] DFF_input;
@@ -40,7 +39,7 @@ module USR_PISO#(
                     .DATA_WIDTH(1)
                 )input_Sel(
                     .A(D_in[i]),
-                    .B(0),
+                    .B(1'b0),
                     .C(temp_D_out[i+1]),
                     .D(temp_D_out[i]),
                     .Sel(PISO_mode),
@@ -53,7 +52,7 @@ module USR_PISO#(
                 )input_Sel(
                     .A(D_in[i]),
                     .B(temp_D_out[i-1]),
-                    .C(0),
+                    .C(1'b0),
                     .D(temp_D_out[i]),
                     .Sel(PISO_mode),
                     .E(DFF_input[i])
@@ -77,8 +76,7 @@ module USR_PISO#(
                 .clk(sclk),
                 .reset(!reset_n),
                 .P(DFF_input[i]),
-                .Q(temp_D_out[i]),
-                .notQ(unused_flags)
+                .Q(temp_D_out[i])
             );               
         end
     endgenerate

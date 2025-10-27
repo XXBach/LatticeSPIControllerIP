@@ -1,0 +1,97 @@
+QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 16:37:20 on Oct 24,2025
+vopt -work work SPI_Controller_Top -o workopt2 -l voptlog.log 
+
+Top level modules:
+	SPI_Controller_Top
+
+Analyzing design...
+-- Loading module SPI_Controller_Top
+-- Loading module SPIController
+-- Loading module Clock_Generator
+-- Loading module MasterPeer
+-- Loading module Counter
+-- Loading module USR_PISO
+-- Loading module USR_SIPO
+-- Loading module SlavePeer
+-- Loading module USR_SISO
+-- Loading module Mux4_to_1_Gatelevel
+-- Loading module Mux2_to_1_Gatelevel
+-- Loading module DFFs_Behavioral
+-- Loading module DFFs_GateLevel
+-- Loading module D_latch
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(40): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(64): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(52): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(39): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(63): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(51): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(62).
+** Warning: ./SPI.srcs/sources_1/new/USR_PISO.v(41): (vopt-2241) Connection width does not match width of port 'B'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(63).
+** Warning: ./SPI.srcs/sources_1/new/USR_PISO.v(53): (vopt-2241) Connection width does not match width of port 'C'. The port definition is at: ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v(64).
+** Warning: ./SPI.srcs/sources_1/new/SPI_Controller_Top.v(86): (vopt-2241) Connection width does not match width of port 'current_state'. The port definition is at: ./SPI.srcs/sources_1/new/SPIController.v(60).
+Optimizing 14 design-units (inlining 161/162 module instances):
+-- Inlining module SPIController(fast)
+-- Inlining module Clock_Generator(fast)
+-- Inlining module Counter(fast)
+-- Inlining module Mux2_to_1_Gatelevel(fast)
+-- Inlining module Mux4_to_1_Gatelevel(fast)
+-- Inlining module DFFs_Behavioral(fast)
+-- Inlining module USR_PISO(fast)
+-- Inlining module D_latch(fast)
+-- Inlining module DFFs_GateLevel(fast)
+** Warning: ./SPI.srcs/sources_1/imports/new/DFFs.v(87): (vopt-2685) [TFMPC] - Too few port connections for 'master'.  Expected 4, found 3.
+** Warning: ./SPI.srcs/sources_1/imports/new/DFFs.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+-- Inlining module USR_SIPO(fast)
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SIPO.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+-- Inlining module MasterPeer(fast)
+-- Inlining module USR_SISO(fast)
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2685) [TFMPC] - Too few port connections for 'DFF_Reg'.  Expected 5, found 4.
+** Warning: ./SPI.srcs/sources_1/new/USR_SISO.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'notQ'.
+-- Inlining module SlavePeer(fast)
+-- Optimizing module SPI_Controller_Top(fast)
+** Warning: ./SPI.srcs/sources_1/new/SPI_Controller_Top.v(125): (vopt-2685) [TFMPC] - Too few port connections for 'MST_Peer'.  Expected 11, found 10.
+** Warning: ./SPI.srcs/sources_1/new/SPI_Controller_Top.v(125): (vopt-2718) [TFMPC] - Missing connection for port 'PISO_Current_Data'.
+** Warning: ./SPI.srcs/sources_1/new/SPI_Controller_Top.v(142): (vopt-2685) [TFMPC] - Too few port connections for 'SLV_Peer'.  Expected 8, found 7.
+** Warning: ./SPI.srcs/sources_1/new/SPI_Controller_Top.v(142): (vopt-2718) [TFMPC] - Missing connection for port 'SISO_Current_Data'.
+Optimized design name is workopt2
+End time: 16:37:20 on Oct 24,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 57

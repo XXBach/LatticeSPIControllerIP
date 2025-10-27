@@ -1,0 +1,38 @@
+QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 16:45:18 on Oct 26,2025
+vopt -work work SPI_top_tb -o workopt -l voptlog2_fixed.log 
+
+Top level modules:
+	SPI_top_tb
+
+Analyzing design...
+-- Loading module SPI_top_tb
+-- Loading module SPI_Controller_Top
+-- Loading module SPIController
+-- Loading module Clock_Generator
+-- Loading module MasterPeer
+-- Loading module Counter
+-- Loading module USR_PISO
+-- Loading module USR_SIPO
+-- Loading module SlavePeer
+-- Loading module USR_SISO
+-- Loading module Mux4_to_1_Gatelevel
+-- Loading module Mux2_to_1_Gatelevel
+-- Loading module DFFs_Behavioral
+Optimizing 13 design-units (inlining 130/131 module instances):
+-- Inlining module SPIController(fast)
+-- Inlining module Clock_Generator(fast)
+-- Inlining module Counter(fast)
+-- Inlining module Mux2_to_1_Gatelevel(fast)
+-- Inlining module Mux4_to_1_Gatelevel(fast)
+-- Inlining module DFFs_Behavioral(fast)
+-- Inlining module USR_PISO(fast)
+-- Inlining module USR_SIPO(fast)
+-- Inlining module MasterPeer(fast)
+-- Inlining module USR_SISO(fast)
+-- Inlining module SlavePeer(fast)
+-- Inlining module SPI_Controller_Top(fast)
+-- Optimizing module SPI_top_tb(fast)
+Optimized design name is workopt
+End time: 16:45:19 on Oct 26,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,32 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 17:59:19 on Oct 26,2025
+vlog -work work ./SPI.srcs/sources_1/new/Clock_Generator.v ./SPI.srcs/sources_1/new/MasterPeer.v ./SPI.srcs/sources_1/new/RegisterFile.v ./SPI.srcs/sources_1/new/SlavePeer.v ./SPI.srcs/sources_1/new/SPI_Controller_Top.v ./SPI.srcs/sources_1/new/SPIController.v ./SPI.srcs/sources_1/new/USR_PISO.v ./SPI.srcs/sources_1/new/USR_SIPO.v ./SPI.srcs/sources_1/new/USR_SISO.v ./SPI.srcs/sources_1/imports/new/DFFs.v ./SPI.srcs/sources_1/imports/new/Mux2_to_1.v ./SPI.srcs/sources_1/imports/new/Mux4_to_1.v ./SPI.srcs/sources_1/imports/new/Synchronous_Counter.v ./SPI.srcs/sim_1/new/SPI_top_tb.v -l vlog3_fixed.log 
+-- Compiling module Clock_Generator
+-- Compiling module MasterPeer
+-- Compiling module RegisterFile
+-- Compiling module SlavePeer
+-- Compiling module SPI_Controller_Top
+-- Compiling module SPIController
+-- Compiling module USR_PISO
+-- Compiling module USR_SIPO
+-- Compiling module USR_SISO
+-- Compiling module DFFs_Behavioral
+-- Compiling module DFFs_GateLevel
+-- Compiling module D_latch
+-- Compiling module Mux2_to_1_Dataflow
+-- Compiling module Mux2_to_1_Behavioral
+-- Compiling module Mux2_to_1_Gatelevel
+-- Compiling module Mux4_to_1_Behavioral
+-- Compiling module Mux4_to_1_Gatelevel
+-- Compiling module Counter
+-- Compiling module SPI_top_tb
+
+Top level modules:
+	RegisterFile
+	DFFs_GateLevel
+	Mux2_to_1_Dataflow
+	Mux2_to_1_Behavioral
+	Mux4_to_1_Behavioral
+	SPI_top_tb
+End time: 17:59:20 on Oct 26,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

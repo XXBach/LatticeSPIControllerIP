@@ -1,0 +1,9 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 16:00:05 on Oct 24,2025
+vlog -work work SPI_top_tb.v -l vlog.log 
+-- Compiling module SPI_top_tb
+
+Top level modules:
+	SPI_top_tb
+End time: 16:00:05 on Oct 24,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

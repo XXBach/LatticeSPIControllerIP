@@ -38,19 +38,19 @@ module USR_SISO#(
                 Mux4_to_1_Gatelevel#(
                     .DATA_WIDTH(1)
                 )input_Sel(
-                    .A(0),
+                    .A(1'b0),
                     .B(D_in),
                     .C(temp_D_out[i+1]),
                     .D(temp_D_out[i]),
                     .Sel(SISO_mode),
                     .E(DFF_input[i])
                 );
-            end
+            end 
             else if(i == DATA_WIDTH - 1) begin
                 Mux4_to_1_Gatelevel#(
                     .DATA_WIDTH(1)
                 )input_Sel(
-                    .A(0),
+                    .A(1'b0),
                     .B(temp_D_out[i-1]),
                     .C(D_in),
                     .D(temp_D_out[i]),
@@ -62,7 +62,7 @@ module USR_SISO#(
                 Mux4_to_1_Gatelevel#(
                     .DATA_WIDTH(1)
                 )input_Sel(
-                    .A(0),
+                    .A(1'b0),
                     .B(temp_D_out[i-1]),
                     .C(temp_D_out[i+1]),
                     .D(temp_D_out[i]),
@@ -70,7 +70,7 @@ module USR_SISO#(
                     .E(DFF_input[i])
                 );
             end
-            DFFs_GateLevel#(
+            DFFs_Behavioral#(
                 .MODE(0)
             )DFF_Reg(
                 .clk(sclk),

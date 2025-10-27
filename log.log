@@ -1,0 +1,118 @@
+# vsim -voptargs="+acc" -c work.SPI_top_tb -do "run -all; quit" -l log.log 
+# Start time: 11:03:22 on Oct 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "SPIController(fast)".
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.SPI_top_tb(fast)
+# Loading work.SPI_Controller_Top(fast)
+# Loading work.SPIController(fast)
+# Loading work.Clock_Generator(fast)
+# Loading work.MasterPeer(fast)
+# Loading work.Counter(fast)
+# Loading work.USR_PISO(fast)
+# Loading work.Mux4_to_1_Gatelevel(fast)
+# Loading work.Mux2_to_1_Gatelevel(fast)
+# Loading work.DFFs_Behavioral(fast)
+# Loading work.USR_SIPO(fast)
+# Loading work.SlavePeer(fast)
+# Loading work.USR_SISO(fast)
+# run -all
+# [5000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [15000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [25000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [35000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [45000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [55000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [65000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [75000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [85000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [95000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [105000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [115000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [125000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [135000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [145000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [155000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [165000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [175000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [185000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [195000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [205000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [205000] Master latch the data that will be shifted to Slave later on | data in Master: 11011110 | data in Slave: 00000000
+# [205000] SS_n is set and sclk_o start working in this state| current SS_n: 0 | current sclk_o: 1
+# [205000] MISO and MOSI not yet been drive | current MISO: 0 | current MOSI: 1
+# [215000] MOSI drive, the data in master is now shifting data into slave |SS_n: 0 | sclk_o: 0 | MOSI: 1 | MISO: 0 | Current data in Master: 11011110 |current data in Slave: 00000001
+# [225000] Slave Sample data in MOSI, the data which was sent is sampling by Slave |SS_n: 0 | sclk_o: 1 | MOSI: 1 | MISO: 0 | Current data in Master: 10111100 |current data in Slave: 00000001
+# [235000] MOSI drive, the data in master is now shifting data into slave |SS_n: 0 | sclk_o: 0 | MOSI: 1 | MISO: 0 | Current data in Master: 10111100 |current data in Slave: 00000011
+# [245000] Slave Sample data in MOSI, the data which was sent is sampling by Slave |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 0 | Current data in Master: 01111000 |current data in Slave: 00000011
+# [255000] MOSI drive, the data in master is now shifting data into slave |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 0 | Current data in Master: 01111000 |current data in Slave: 00000110
+# [265000] Slave Sample data in MOSI, the data which was sent is sampling by Slave |SS_n: 0 | sclk_o: 1 | MOSI: 1 | MISO: 0 | Current data in Master: 11110000 |current data in Slave: 00000110
+# [275000] MOSI drive, the data in master is now shifting data into slave |SS_n: 0 | sclk_o: 0 | MOSI: 1 | MISO: 0 | Current data in Master: 11110000 |current data in Slave: 00001101
+# [285000] Slave Sample data in MOSI, the data which was sent is sampling by Slave |SS_n: 0 | sclk_o: 1 | MOSI: 1 | MISO: 0 | Current data in Master: 11100000 |current data in Slave: 00001101
+# [295000] MOSI drive, the data in master is now shifting data into slave |SS_n: 0 | sclk_o: 0 | MOSI: 1 | MISO: 0 | Current data in Master: 11100000 |current data in Slave: 00011011
+# [305000] Slave Sample data in MOSI, the data which was sent is sampling by Slave |SS_n: 0 | sclk_o: 1 | MOSI: 1 | MISO: 0 | Current data in Master: 11000000 |current data in Slave: 00011011
+# [315000] MOSI drive, the data in master is now shifting data into slave |SS_n: 0 | sclk_o: 0 | MOSI: 1 | MISO: 0 | Current data in Master: 11000000 |current data in Slave: 00110111
+# [325000] Slave Sample data in MOSI, the data which was sent is sampling by Slave |SS_n: 0 | sclk_o: 1 | MOSI: 1 | MISO: 0 | Current data in Master: 10000000 |current data in Slave: 00110111
+# [335000] MOSI drive, the data in master is now shifting data into slave |SS_n: 0 | sclk_o: 0 | MOSI: 1 | MISO: 0 | Current data in Master: 10000000 |current data in Slave: 01101111
+# [345000] Slave Sample data in MOSI, the data which was sent is sampling by Slave |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 0 | Current data in Master: 00000000 |current data in Slave: 01101111
+# [365000] MISO drive, the data in slave is now shifting back into master |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 0 | Current data in Master: 00000000 |current data in Slave: 11011110
+# [375000] Master Sample data in MISO, the data which was sent is sampling by Master |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 1 | Current data in Master: 10000111 |current data in Slave: 01101111
+# [385000] MISO drive, the data in slave is now shifting back into master |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 1 | Current data in Master: 10000000 |current data in Slave: 01101111
+# [395000] Master Sample data in MISO, the data which was sent is sampling by Master |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 1 | Current data in Master: 01011100 |current data in Slave: 00110111
+# [405000] MISO drive, the data in slave is now shifting back into master |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 1 | Current data in Master: 11000000 |current data in Slave: 00110111
+# [415000] Master Sample data in MISO, the data which was sent is sampling by Master |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 1 | Current data in Master: 00110001 |current data in Slave: 00011011
+# [425000] MISO drive, the data in slave is now shifting back into master |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 1 | Current data in Master: 11100000 |current data in Slave: 00011011
+# [435000] Master Sample data in MISO, the data which was sent is sampling by Master |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 1 | Current data in Master: 00000111 |current data in Slave: 00001101
+# [445000] MISO drive, the data in slave is now shifting back into master |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 1 | Current data in Master: 11110000 |current data in Slave: 00001101
+# [455000] Master Sample data in MISO, the data which was sent is sampling by Master |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 0 | Current data in Master: 11011100 |current data in Slave: 00000110
+# [465000] MISO drive, the data in slave is now shifting back into master |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 0 | Current data in Master: 01111000 |current data in Slave: 00000110
+# [475000] Master Sample data in MISO, the data which was sent is sampling by Master |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 1 | Current data in Master: 10110001 |current data in Slave: 00000011
+# [485000] MISO drive, the data in slave is now shifting back into master |SS_n: 0 | sclk_o: 1 | MOSI: 0 | MISO: 1 | Current data in Master: 10111100 |current data in Slave: 00000011
+# [495000] Master Sample data in MISO, the data which was sent is sampling by Master |SS_n: 0 | sclk_o: 0 | MOSI: 0 | MISO: 1 | Current data in Master: 10000110 |current data in Slave: 00000001
+# [505000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [515000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [525000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [535000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [545000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [555000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [565000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [575000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [585000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [595000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [605000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [615000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [625000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [635000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [645000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [655000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [665000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [675000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [685000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [695000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [705000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [715000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [725000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [735000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [745000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [755000] Setups states or sampling to FIFO, do not have meaningful data yet
+# [765000] Setups states or sampling to FIFO, do not have meaningful data yet
+# ** Note: $stop    : ./SPI.srcs/sim_1/new/SPI_top_tb.v(148)
+#    Time: 770 ns  Iteration: 0  Instance: /SPI_top_tb
+# Break in Module SPI_top_tb at ./SPI.srcs/sim_1/new/SPI_top_tb.v line 148
+# Stopped at ./SPI.srcs/sim_1/new/SPI_top_tb.v line 148
+#  quit
+# End time: 11:03:23 on Oct 27,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

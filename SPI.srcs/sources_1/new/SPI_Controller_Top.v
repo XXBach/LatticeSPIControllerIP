@@ -53,11 +53,17 @@ module SPI_Controller_Top#(
     output wire [DATA_WIDTH - 1 : 0] PISO_Current_Data,
     output wire [DATA_WIDTH - 1 : 0] SISO_Current_Data,
     
-    output wire [2:0] Controller_states
-    );
+    output wire [2:0] Controller_states,
+    output wire SS_n,
+
+    output wire sclk_o,
+    output wire MOSI,
+    output wire MISO
+    
+);
     
     //Control signal for intra Controller
-    wire SS_n;
+    //wire SS_n;
     wire clk_gen_en;
     wire [1:0] SISO_mode;
     wire [1:0] PISO_mode;
@@ -70,9 +76,9 @@ module SPI_Controller_Top#(
     wire SISO_empty;
     
     //additional signal for master peer and slave peer
-    wire sclk_o;
-    wire MOSI;
-    wire MISO;
+    //wire sclk_o;
+    //wire MOSI;
+    //wire MISO;
     
     // SPI Controller initial
     SPIController#(
@@ -98,7 +104,7 @@ module SPI_Controller_Top#(
         .offset(offset),
         .SPI_ready(SPI_ready),  
         .FIFO_wr_request(FIFO_wr_request),
-        .current_state(Controller_state)
+        .current_state(Controller_states)
     );
     
     // Clock Generator initial
@@ -126,7 +132,8 @@ module SPI_Controller_Top#(
         .MISO(MISO),
         .MOSI(MOSI),
         .D_out(D_out),
-        .PISO_empty(PISO_empty)  
+        .PISO_empty(PISO_empty),
+        .PISO_Current_Data(PISO_Current_Data)
     );
     
     // Slave peer initial
@@ -140,6 +147,7 @@ module SPI_Controller_Top#(
         .SISO_mode(SISO_mode),
         .MOSI(MOSI),
         .MISO(MISO),
-        .SISO_empty(SISO_empty) 
+        .SISO_empty(SISO_empty),
+        .SISO_Current_Data(SISO_Current_Data)
     ); 
 endmodule
